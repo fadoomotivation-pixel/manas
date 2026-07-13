@@ -5,19 +5,9 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#0A0A14]" id="hero">
-      {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          className="object-cover w-full h-full opacity-60"
-          poster="/hero-bg.png"
-        >
-          <source src="/hero-bg.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A14]/50 via-transparent to-[#0A0A14]/90" />
+      {/* Background */}
+      <div className="absolute inset-0 w-full h-full bg-[#0A0A14] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#D4AF37]/20 via-[#0A0A14] to-[#0A0A14]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0A0A14]/80 to-[#0A0A14]" />
       </div>
 
       <div className="container relative z-10 mx-auto px-6 md:px-12 text-center flex flex-col items-center">
@@ -38,7 +28,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 tracking-tight drop-shadow-2xl font-[family-name:var(--font-outfit)]"
         >
-          Manas Property
+          Ultrastar City
         </motion.h1>
 
         <motion.p 
